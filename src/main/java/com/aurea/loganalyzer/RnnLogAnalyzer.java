@@ -1,9 +1,11 @@
 package com.aurea.loganalyzer;
 
 import java.io.IOException;
-import java.net.URI;
 import java.net.URISyntaxException;
+import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.time.Duration;
+import java.time.Instant;
 import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.List;
@@ -27,27 +29,12 @@ import org.nd4j.linalg.lossfunctions.LossFunctions.LossFunction;
 
 public class RnnLogAnalyzer {
 
-    // define a sentence to learn.
-    // Add a special character at the beginning so the RNN learns the complete string and ends with the marker.
-    private static final char[] LEARNSTRING = "*Null ModelAndView returned to DispatcherServlet."
-            .toCharArray();
-
-    // a list of all possible characters
-    private static final List<Character> LEARNSTRING_CHARS_LIST = new ArrayList<>();
-
     // RNN dimensions
-    private static final int HIDDEN_LAYER_WIDTH = 50;
+    private static final int HIDDEN_LAYER_WIDTH = 25;
     private static final int HIDDEN_LAYER_CONT = 2;
     private static final Random r = new Random(7894);
 
     public static void main(String[] args) throws URISyntaxException, IOException {
-
-        // create a dedicated list of possible chars in LEARNSTRING_CHARS_LIST
-        LinkedHashSet<Character> LEARNSTRING_CHARS = new LinkedHashSet<>();
-        for (char c : LEARNSTRING) {
-            LEARNSTRING_CHARS.add(c);
-        }
-        LEARNSTRING_CHARS_LIST.addAll(LEARNSTRING_CHARS);
 
         // some common parameters
         NeuralNetConfiguration.Builder builder = new NeuralNetConfiguration.Builder();
@@ -59,10 +46,16 @@ public class RnnLogAnalyzer {
 
         ListBuilder listBuilder = builder.list();
 
+        ClassLoader classLoader = RnnLogAnalyzer.class.getClassLoader();
+        Path trainLogsPath = Paths.get(classLoader.getResource("train000000.logs").toURI());
+        Path testLogsPath = Paths.get(classLoader.getResource("test000000.logs").toURI());
+        LogParser logParser = new LogParser(trainLogsPath, testLogsPath);
+        DataSet trainingData = logParser.getDataSet();
+        int shape_size = trainingData.getFeatures().shape()[1];
         // first difference, for rnns we need to use LSTM.Builder
         for (int i = 0; i < HIDDEN_LAYER_CONT; i++) {
             LSTM.Builder hiddenLayerBuilder = new LSTM.Builder();
-            hiddenLayerBuilder.nIn(i == 0 ? LEARNSTRING_CHARS.size() : HIDDEN_LAYER_WIDTH);
+            hiddenLayerBuilder.nIn(i == 0 ? shape_size : HIDDEN_LAYER_WIDTH);
             hiddenLayerBuilder.nOut(HIDDEN_LAYER_WIDTH);
             // adopted activation function from LSTMCharModellingExample
             // seems to work well with RNNs
@@ -76,7 +69,7 @@ public class RnnLogAnalyzer {
         // this is required for our sampleFromDistribution-function
         outputLayerBuilder.activation(Activation.SOFTMAX);
         outputLayerBuilder.nIn(HIDDEN_LAYER_WIDTH);
-        outputLayerBuilder.nOut(LEARNSTRING_CHARS.size());
+        outputLayerBuilder.nOut(trainingData.numInputs());
         listBuilder.layer(HIDDEN_LAYER_CONT, outputLayerBuilder.build());
 
         // finish builder
@@ -89,68 +82,68 @@ public class RnnLogAnalyzer {
         net.init();
         net.setListeners(new ScoreIterationListener(1));
 
-        /*
-         * CREATE OUR TRAINING DATA
-         */
-        // create input and output arrays: SAMPLE_INDEX, INPUT_NEURON,
-        // SEQUENCE_POSITION
-        INDArray input = Nd4j.zeros(1, LEARNSTRING_CHARS_LIST.size(), LEARNSTRING.length);
-        INDArray labels = Nd4j.zeros(1, LEARNSTRING_CHARS_LIST.size(), LEARNSTRING.length);
-        // loop through our sample-sentence
-        int samplePos = 0;
-        for (char currentChar : LEARNSTRING) {
-            // small hack: when currentChar is the last, take the first char as
-            // nextChar - not really required. Added to this hack by adding a starter first character.
-            char nextChar = LEARNSTRING[(samplePos + 1) % (LEARNSTRING.length)];
-            // input neuron for current-char is 1 at "samplePos"
-            input.putScalar(new int[]{0, LEARNSTRING_CHARS_LIST.indexOf(currentChar), samplePos}, 1);
-            // output neuron for next-char is 1 at "samplePos"
-            labels.putScalar(new int[]{0, LEARNSTRING_CHARS_LIST.indexOf(nextChar), samplePos}, 1);
-            samplePos++;
-        }
-        DataSet trainingData = LogParser.loadFromTextFile(Paths.get(RnnLogAnalyzer.class.getClassLoader()
-                .getResource("000000.logs").toURI()));
+        List<Integer> testList = logParser.getTestList();
 
         // some epochs
-        for (int epoch = 0; epoch < 100; epoch++) {
+        for (int epoch = 0; epoch < 5; epoch++) {
 
             System.out.println("Epoch " + epoch);
 
             // train the data
+            Instant start = Instant.now();
             net.fit(trainingData);
+            long seconds = Duration.between(start, Instant.now()).getSeconds();
+            System.out.println("Finished training in " + seconds + " seconds");
 
             // clear current stance from the last example
             net.rnnClearPreviousState();
 
+            List<Integer> testErrorIndexes = new ArrayList<>();
+            List<Integer> predictedErrorIndexes = new ArrayList<>();
+
             // put the first character into the rrn as an initialisation
-            INDArray testInit = Nd4j.zeros(1, LEARNSTRING_CHARS_LIST.size(), 1);
-            int index = LEARNSTRING_CHARS_LIST.indexOf(LEARNSTRING[0]);
-            testInit.putScalar(index, 1);
+            INDArray testInit = Nd4j.zeros(1, shape_size, 1);
+            Integer first = testList.get(0);
+            if(first == 1) {
+                testErrorIndexes.add(0);
+            }
+            testInit.putScalar(logParser.getHashesList().indexOf(first), 1);
 
             // run one step -> IMPORTANT: rnnTimeStep() must be called, not
             // output()
             // the output shows what the net thinks what should come next
             INDArray output = net.rnnTimeStep(testInit);
 
-            // now the net should guess LEARNSTRING.length more characters
-            for (char dummy : LEARNSTRING) {
+            // now the net should guess
+            int lineNumber = 0;
+            for (int hash : testList) {
 
+                System.out.print("processing line " + lineNumber + " \r");
                 // first process the last output of the network to a concrete
                 // neuron, the neuron with the highest output has the highest
                 // chance to get chosen
                 INDArray exec = Nd4j.getExecutioner().exec(new IMax(output), 1);
-                int sampledCharacterIdx = exec.getInt(0);
+                int sampledIntIdx = exec.getInt(0);
+                int execInt = logParser.getHashesList().get(sampledIntIdx);
 
-                // print the chosen output
-                System.out.print(LEARNSTRING_CHARS_LIST.get(sampledCharacterIdx));
+                if (execInt == 1) {
+                    predictedErrorIndexes.add(lineNumber);
+                    System.out.print("predicted error line number: " + lineNumber);
+                }
 
                 // use the last output as input
-                INDArray nextInput = Nd4j.zeros(1, LEARNSTRING_CHARS_LIST.size(), 1);
-                nextInput.putScalar(sampledCharacterIdx, 1);
+                INDArray nextInput = Nd4j.zeros(1, shape_size, 1);
+                lineNumber++;
+                if(hash == 1) {
+                    testErrorIndexes.add(lineNumber);
+                    System.out.print("real error line number: " + lineNumber);
+                }
+                nextInput.putScalar(logParser.getHashesList().indexOf(hash), 1);
                 output = net.rnnTimeStep(nextInput);
 
             }
-            System.out.print("\n");
+            System.out.println("real error line numbers: " + testErrorIndexes);
+            System.out.println("predicted error line numbers: " + predictedErrorIndexes);
         }
     }
 }
