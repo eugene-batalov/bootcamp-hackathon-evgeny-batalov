@@ -1,5 +1,9 @@
 package com.aurea.loganalyzer;
 
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.List;
@@ -36,7 +40,7 @@ public class RnnLogAnalyzer {
     private static final int HIDDEN_LAYER_CONT = 2;
     private static final Random r = new Random(7894);
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws URISyntaxException, IOException {
 
         // create a dedicated list of possible chars in LEARNSTRING_CHARS_LIST
         LinkedHashSet<Character> LEARNSTRING_CHARS = new LinkedHashSet<>();
@@ -104,7 +108,8 @@ public class RnnLogAnalyzer {
             labels.putScalar(new int[]{0, LEARNSTRING_CHARS_LIST.indexOf(nextChar), samplePos}, 1);
             samplePos++;
         }
-        DataSet trainingData = new DataSet(input, labels);
+        DataSet trainingData = LogParser.loadFromTextFile(Paths.get(RnnLogAnalyzer.class.getClassLoader()
+                .getResource("000000.logs").toURI()));
 
         // some epochs
         for (int epoch = 0; epoch < 100; epoch++) {
