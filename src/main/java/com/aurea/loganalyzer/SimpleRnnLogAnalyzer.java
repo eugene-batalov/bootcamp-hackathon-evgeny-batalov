@@ -7,7 +7,6 @@ import java.nio.file.Paths;
 import java.time.Duration;
 import java.time.Instant;
 import java.util.ArrayList;
-import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Random;
 import org.deeplearning4j.nn.conf.MultiLayerConfiguration;
@@ -27,7 +26,7 @@ import org.nd4j.linalg.learning.config.RmsProp;
 import org.nd4j.linalg.lossfunctions.LossFunctions.LossFunction;
 
 
-public class RnnLogAnalyzer {
+public class SimpleRnnLogAnalyzer {
 
     // RNN dimensions
     private static final int HIDDEN_LAYER_WIDTH = 25;
@@ -46,7 +45,7 @@ public class RnnLogAnalyzer {
 
         ListBuilder listBuilder = builder.list();
 
-        ClassLoader classLoader = RnnLogAnalyzer.class.getClassLoader();
+        ClassLoader classLoader = SimpleRnnLogAnalyzer.class.getClassLoader();
         Path trainLogsPath = Paths.get(classLoader.getResource("train000000.logs").toURI());
         Path testLogsPath = Paths.get(classLoader.getResource("test000000.logs").toURI());
         LogParser logParser = new LogParser(trainLogsPath, testLogsPath);
@@ -69,7 +68,7 @@ public class RnnLogAnalyzer {
         // this is required for our sampleFromDistribution-function
         outputLayerBuilder.activation(Activation.SOFTMAX);
         outputLayerBuilder.nIn(HIDDEN_LAYER_WIDTH);
-        outputLayerBuilder.nOut(trainingData.numInputs());
+        outputLayerBuilder.nOut(shape_size);
         listBuilder.layer(HIDDEN_LAYER_CONT, outputLayerBuilder.build());
 
         // finish builder
@@ -104,10 +103,11 @@ public class RnnLogAnalyzer {
             // put the first character into the rrn as an initialisation
             INDArray testInit = Nd4j.zeros(1, shape_size, 1);
             Integer first = testList.get(0);
-            if(first == 1) {
+            if (first == 1) {
                 testErrorIndexes.add(0);
             }
             testInit.putScalar(logParser.getHashesList().indexOf(first), 1);
+            System.out.println("index of first: " + logParser.getHashesList().indexOf(first));
 
             // run one step -> IMPORTANT: rnnTimeStep() must be called, not
             // output()
@@ -118,25 +118,23 @@ public class RnnLogAnalyzer {
             int lineNumber = 0;
             for (int hash : testList) {
 
-                System.out.print("processing line " + lineNumber + " \r");
                 // first process the last output of the network to a concrete
                 // neuron, the neuron with the highest output has the highest
                 // chance to get chosen
                 INDArray exec = Nd4j.getExecutioner().exec(new IMax(output), 1);
-                int sampledIntIdx = exec.getInt(0);
-                int execInt = logParser.getHashesList().get(sampledIntIdx);
+                int sampledIntIdx = output.getInt(0);//exec.getInt(0);
 
-                if (execInt == 1) {
+                System.out.println("index: " + sampledIntIdx);
+
+                if (sampledIntIdx == 1) {
                     predictedErrorIndexes.add(lineNumber);
-                    System.out.print("predicted error line number: " + lineNumber);
                 }
 
                 // use the last output as input
                 INDArray nextInput = Nd4j.zeros(1, shape_size, 1);
                 lineNumber++;
-                if(hash == 1) {
+                if (hash == 1) {
                     testErrorIndexes.add(lineNumber);
-                    System.out.print("real error line number: " + lineNumber);
                 }
                 nextInput.putScalar(logParser.getHashesList().indexOf(hash), 1);
                 output = net.rnnTimeStep(nextInput);
