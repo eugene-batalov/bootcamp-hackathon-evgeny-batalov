@@ -31,7 +31,6 @@ public class SimpleRnnLogAnalyzer {
     // RNN dimensions
     private static final int HIDDEN_LAYER_WIDTH = 25;
     private static final int HIDDEN_LAYER_CONT = 2;
-    private static final Random r = new Random(7894);
 
     public static void main(String[] args) throws URISyntaxException, IOException {
 
@@ -50,7 +49,7 @@ public class SimpleRnnLogAnalyzer {
         Path testLogsPath = Paths.get(classLoader.getResource("test000000.logs").toURI());
         LogParser logParser = new LogParser(trainLogsPath, testLogsPath);
         DataSet trainingData = logParser.getDataSet();
-        int shape_size = trainingData.getFeatures().shape()[1];
+        long shape_size = trainingData.getFeatures().shape()[1];
         // first difference, for rnns we need to use LSTM.Builder
         for (int i = 0; i < HIDDEN_LAYER_CONT; i++) {
             LSTM.Builder hiddenLayerBuilder = new LSTM.Builder();
@@ -123,7 +122,7 @@ public class SimpleRnnLogAnalyzer {
                 // chance to get chosen
                 // INDArray exec = Nd4j.getExecutioner().exec(new IMax(output), 1);
                 //int sampledIntIdx = exec.getInt(0);
-                double[] outputProbDistribution = new double[shape_size];
+                double[] outputProbDistribution = new double[(int)shape_size];
                 for (int i = 0; i < shape_size; i++) {
                     outputProbDistribution[i] = output.getDouble(0, i);
                 }
