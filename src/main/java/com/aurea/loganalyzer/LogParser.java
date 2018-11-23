@@ -5,13 +5,11 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
 import lombok.Data;
-import lombok.experimental.UtilityClass;
 import org.nd4j.linalg.api.ndarray.INDArray;
 import org.nd4j.linalg.dataset.DataSet;
 import org.nd4j.linalg.factory.Nd4j;
@@ -66,7 +64,7 @@ public class LogParser {
         }
         String s = strings[3] + strings[8] + strings[10];
         int hashCode = s.hashCode();
-        return !fromList || hashesList.contains(hashCode)? hashCode : 0;
+        return !fromList || hashesList.contains(hashCode) ? hashCode : 0;
     }
 
     public List<Integer> getTestList(Path fileName) throws IOException {

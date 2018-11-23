@@ -1,0 +1,515 @@
+"C:\Program Files\Java\jdk1.8.0_191\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3_\lib\idea_rt.jar=54788:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.3_\bin" -Dfile.encoding=UTF-8 -classpath "C:\Program Files\Java\jdk1.8.0_191\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\rt.jar;C:\bootcamp\bootcamp-hackathon-evgeny-batalov\out\production\classes;C:\bootcamp\bootcamp-hackathon-evgeny-batalov\out\production\resources;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.deeplearning4j\deeplearning4j-core\1.0.0-beta3\252f7061a230cccf1641d4f091eb60283d92b9be\deeplearning4j-core-1.0.0-beta3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.nd4j\nd4j-native-platform\1.0.0-beta3\b88cb8b8c45c11dac4c5b8ccea194390a6f00223\nd4j-native-platform-1.0.0-beta3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.slf4j\slf4j-simple\1.7.25\8dacf9514f0c707cbbcdd6fd699e8940d42fb54e\slf4j-simple-1.7.25.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.deeplearning4j\deeplearning4j-modelimport\1.0.0-beta3\731e62d0077bdc06fe501c3739121c62b2e708b5\deeplearning4j-modelimport-1.0.0-beta3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.deeplearning4j\deeplearning4j-tsne\1.0.0-beta3\bc71ecd069df33dc11134480b0949d18afa73bbb\deeplearning4j-tsne-1.0.0-beta3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.deeplearning4j\deeplearning4j-datasets\1.0.0-beta3\69481c089a1019decedc09e6af7ab69a6a30d772\deeplearning4j-datasets-1.0.0-beta3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.deeplearning4j\deeplearning4j-datavec-iterators\1.0.0-beta3\3299626fb8df24c87314c5cfc5de3108d52c9f8e\deeplearning4j-datavec-iterators-1.0.0-beta3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.deeplearning4j\nearestneighbor-core\1.0.0-beta3\f9af4dcc349d1970816927242fd2fd6fe404ba0\nearestneighbor-core-1.0.0-beta3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.deeplearning4j\deeplearning4j-nn\1.0.0-beta3\d0e1881d573e3a6a5bd38ad4a66d37b3c5810562\deeplearning4j-nn-1.0.0-beta3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.datavec\datavec-data-image\1.0.0-beta3\988fe976c6552e0a991174e2b1475e38d2852272\datavec-data-image-1.0.0-beta3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.datavec\datavec-api\1.0.0-beta3\9a6bea180319d00a99500c81d14853b2d83db929\datavec-api-1.0.0-beta3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.nd4j\nd4j-native\1.0.0-beta3\4e1e36053c90b2aaffdd5915e293eaf639cde149\nd4j-native-1.0.0-beta3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.nd4j\nd4j-native\1.0.0-beta3\d473330250bd18f61b71e85dd8d9db8b403ffff2\nd4j-native-1.0.0-beta3-android-arm.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.nd4j\nd4j-native\1.0.0-beta3\71e3d0e044bca412c081b945c6623c74621a6dcf\nd4j-native-1.0.0-beta3-android-arm64.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.nd4j\nd4j-native\1.0.0-beta3\2adef0f24fc0c7d8cf292643ac5a1430230aea62\nd4j-native-1.0.0-beta3-android-x86.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.nd4j\nd4j-native\1.0.0-beta3\64503231ea1fc6f5b981342f583255c3f8a82073\nd4j-native-1.0.0-beta3-android-x86_64.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.nd4j\nd4j-native\1.0.0-beta3\cb041231123290dea2680bb5c26f7aeb0750ce91\nd4j-native-1.0.0-beta3-ios-arm64.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.nd4j\nd4j-native\1.0.0-beta3\a4e14f4160bd5a90e76a1160c222ae7f69d11dd5\nd4j-native-1.0.0-beta3-ios-x86_64.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.nd4j\nd4j-native\1.0.0-beta3\b53370b7834c06dd817e446374aae3c884ffdd75\nd4j-native-1.0.0-beta3-linux-x86_64.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.nd4j\nd4j-native\1.0.0-beta3\84f9c4298e86e37a833750e78828b6356d659984\nd4j-native-1.0.0-beta3-macosx-x86_64.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.nd4j\nd4j-native\1.0.0-beta3\265bbf90e85046b184e9b892e634fd45c26edf06\nd4j-native-1.0.0-beta3-windows-x86_64.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.nd4j\nd4j-native\1.0.0-beta3\414a9f8b43fdd6d482be22b4fac063b96a998a42\nd4j-native-1.0.0-beta3-linux-ppc64le.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.nd4j\nd4j-native\1.0.0-beta3\1d0879ef32f24dc6886145b53e7beaf7e1791ccd\nd4j-native-1.0.0-beta3-linux-armhf.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.deeplearning4j\deeplearning4j-utility-iterators\1.0.0-beta3\f6f3ed1fd9893ea102e30a3d0aec170db6f06715\deeplearning4j-utility-iterators-1.0.0-beta3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.nd4j\nd4j-native-api\1.0.0-beta3\86ee835f391afaa20ad4aa21708d476d6a6082f6\nd4j-native-api-1.0.0-beta3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.deeplearning4j\deeplearning4j-util\1.0.0-beta3\38ca241d1a3ac96b00107e0602e4a48d54584789\deeplearning4j-util-1.0.0-beta3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.nd4j\nd4j-jackson\1.0.0-beta3\15d941fd103bcf6321ca7e10f5f4881d5b7225d7\nd4j-jackson-1.0.0-beta3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.nd4j\nd4j-base64\1.0.0-beta3\e68e6c9c597ba3a300be39d3430ec7faff95f955\nd4j-base64-1.0.0-beta3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.nd4j\nd4j-api\1.0.0-beta3\4b494837bc256d814b984ed658effbeafef1035d\nd4j-api-1.0.0-beta3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.deeplearning4j\deeplearning4j-ui-components\1.0.0-beta3\a0ab0b131e3f9a642997c58c31b2714cabd6d771\deeplearning4j-ui-components-1.0.0-beta3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.deeplearning4j\deeplearning4j-common\1.0.0-beta3\55f598fe7bab9d1e430d3113ec45dc539d54e41\deeplearning4j-common-1.0.0-beta3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.nd4j\nd4j-buffer\1.0.0-beta3\33ea9e57b260e3b5e05582e864aa41592f5c5ccf\nd4j-buffer-1.0.0-beta3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.nd4j\nd4j-context\1.0.0-beta3\577126b55fdc9b2161132870418a5a3718537875\nd4j-context-1.0.0-beta3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.nd4j\nd4j-common\1.0.0-beta3\b62f372d17556189848274eb184c10e50e52f230\nd4j-common-1.0.0-beta3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\com.github.oshi\oshi-core\3.4.2\18dfa6fad54d8cebed5600a67aefa8c6601ebd77\oshi-core-3.4.2.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter\2.1.0.RELEASE\54eab30f1be3dd2f1e833e26143f6243246d878d\spring-boot-starter-2.1.0.RELEASE.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-logging\2.1.0.RELEASE\d1bd872e05961f30bc122ad14f3e9ae12388e873\spring-boot-starter-logging-2.1.0.RELEASE.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\ch.qos.logback\logback-classic\1.2.3\7c4f3c474fb2c041d8028740440937705ebb473a\logback-classic-1.2.3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4j\log4j-to-slf4j\2.11.1\1097acadf76aa4dd721ec5807566003ae9d975de\log4j-to-slf4j-2.11.1.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.slf4j\jul-to-slf4j\1.7.25\af5364cd6679bfffb114f0dec8a157aaa283b76\jul-to-slf4j-1.7.25.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.slf4j\slf4j-api\1.7.25\da76ca59f6a57ee3102f8f9bd9cee742973efa8a\slf4j-api-1.7.25.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-math3\3.5\13af68e9a11576953f5c4b09436f8207be9d3a27\commons-math3-3.5.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\commons-io\commons-io\2.5\2852e6e05fbb95076fc091f6d1780f1f8fe35e0f\commons-io-2.5.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-compress\1.16.1\7b5cdabadb4cf12f5ee0f801399e70635583193f\commons-compress-1.16.1.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\com.github.os72\protobuf-java-util-shaded-351\0.9\e4a45ffdf337c6d627bcf2edcb2de2d906bd6ee5\protobuf-java-util-shaded-351-0.9.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\com.google.guava\guava\20.0\89507701249388e1ed5ddcf8c41f4ce1be7831ef\guava-20.0.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-lang3\3.8.1\6505a72a097d9270f7a9e7bf42c4238283247755\commons-lang3-3.8.1.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.nd4j\jackson\1.0.0-beta3\ca14119b41b91c02b6edbbe5b62d21f0f575e6ff\jackson-1.0.0-beta3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\openblas-platform\0.3.3-1.4.3\bc52f7efbf9d37087e9afaebf4dcd8de2f5ec995\openblas-platform-0.3.3-1.4.3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\mkl-platform\2019.0-1.4.3\6231b945f05bc9edef3abee5ccdba1f203084409\mkl-platform-2019.0-1.4.3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\mkl-dnn-platform\0.16-1.4.3\2db83f2c4538ab557d0cfc9419453f2fc70d3103\mkl-dnn-platform-0.16-1.4.3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-autoconfigure\2.1.0.RELEASE\8898af6accfab65ac6e232c1535abbc33cfa5fcb\spring-boot-autoconfigure-2.1.0.RELEASE.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot\2.1.0.RELEASE\a78c97c771856f7690b9308886c75affe9295b12\spring-boot-2.1.0.RELEASE.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\javax.annotation\javax.annotation-api\1.3.2\934c04d3cfef185a8008e7bf34331b79730a9d43\javax.annotation-api-1.3.2.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.springframework\spring-context\5.1.2.RELEASE\5c85bc522a5adac9b09b7204fa20708519ab6a11\spring-context-5.1.2.RELEASE.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.springframework\spring-aop\5.1.2.RELEASE\bc3cdf3c81bc0a3482cc7f6b9e00ab76847056a7\spring-aop-5.1.2.RELEASE.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.springframework\spring-beans\5.1.2.RELEASE\5d513701a79c92f0549574f5170a05c4af7c893d\spring-beans-5.1.2.RELEASE.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.springframework\spring-expression\5.1.2.RELEASE\3c16b062785e4c101db6b754fcb34a77c1e912c\spring-expression-5.1.2.RELEASE.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.springframework\spring-core\5.1.2.RELEASE\b9b00d4075c92761cfd4e527e0bdce1931b4f3dc\spring-core-5.1.2.RELEASE.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.yaml\snakeyaml\1.23\ec62d74fe50689c28c0ff5b35d3aebcaa8b5be68\snakeyaml-1.23.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco\javacv\1.4.3\91cca77b87cf9811a096601fd82811bcd105ef34\javacv-1.4.3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\openblas\0.3.3-1.4.3\fcb1f86620b2c9ed78018cae24660c76b17bd8b9\openblas-0.3.3-1.4.3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\openblas\0.3.3-1.4.3\789aa314016d983b4bfb4dd22beba11959780d9c\openblas-0.3.3-1.4.3-android-arm.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\openblas\0.3.3-1.4.3\3743b45bb010f6dacd3f25b2c17f38dde7fe10d3\openblas-0.3.3-1.4.3-android-arm64.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\openblas\0.3.3-1.4.3\a70dc3cee01a569b7c513230f74dafef438848f\openblas-0.3.3-1.4.3-android-x86.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\openblas\0.3.3-1.4.3\6573100f6fa0125fa1529e54b38e0f3ed6447501\openblas-0.3.3-1.4.3-android-x86_64.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\openblas\0.3.3-1.4.3\5ae451c179686a67038d8c23439b9dc0e7248a8a\openblas-0.3.3-1.4.3-ios-arm64.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\openblas\0.3.3-1.4.3\1c5b55f9f08cd072c44c22b45f287a7d6ddb6b9a\openblas-0.3.3-1.4.3-ios-x86_64.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\openblas\0.3.3-1.4.3\8074747dbe822e19479d3f79c6b5ffa90df9d1a3\openblas-0.3.3-1.4.3-linux-x86.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\openblas\0.3.3-1.4.3\6938c981dd275e4e247cbe3dd494b40f0116fbbe\openblas-0.3.3-1.4.3-linux-x86_64.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\openblas\0.3.3-1.4.3\2ac068fc11137407844bdb48798ab9d214654e43\openblas-0.3.3-1.4.3-linux-armhf.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\openblas\0.3.3-1.4.3\60b20d43d6355043100ceecb438ae10a102b9591\openblas-0.3.3-1.4.3-linux-ppc64le.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\openblas\0.3.3-1.4.3\d4fcc3994bffc58f56e16af52dbbc20c7a70448\openblas-0.3.3-1.4.3-macosx-x86_64.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\openblas\0.3.3-1.4.3\e360d7017896a695260239e475ac7a76d326a4d8\openblas-0.3.3-1.4.3-windows-x86.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\openblas\0.3.3-1.4.3\868ed78483a1802a09ac4ee3dfe677e51b938b90\openblas-0.3.3-1.4.3-windows-x86_64.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\mkl\2019.0-1.4.3\8b1ee1d83fb7c9578faa5223980aca0bf50f8f8\mkl-2019.0-1.4.3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\mkl\2019.0-1.4.3\dc62733dfd6d6d014e7f5a52b99a0339b6e4719\mkl-2019.0-1.4.3-linux-x86.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\mkl\2019.0-1.4.3\96c5d91936cb90510750c2b7af6d59459a79e65d\mkl-2019.0-1.4.3-linux-x86_64.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\mkl\2019.0-1.4.3\42f487249b4ee7e3341723c9a5ef333fee8ca4a5\mkl-2019.0-1.4.3-macosx-x86_64.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\mkl\2019.0-1.4.3\580c23c6fd8352295e88aeaf05c1d2b152bd2343\mkl-2019.0-1.4.3-windows-x86.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\mkl\2019.0-1.4.3\9b89b1484b01f40b672c5a536316acf3283b3e3d\mkl-2019.0-1.4.3-windows-x86_64.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\mkl-dnn\0.16-1.4.3\65a2621e884a34ba5ce2cc57ace7c985567de9a8\mkl-dnn-0.16-1.4.3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\mkl-dnn\0.16-1.4.3\5639d7364cf0083f0c886889b29ceefc4de79e07\mkl-dnn-0.16-1.4.3-linux-x86_64.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\mkl-dnn\0.16-1.4.3\2a66b7f81b55a6e29793159759d689ba08252828\mkl-dnn-0.16-1.4.3-macosx-x86_64.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\mkl-dnn\0.16-1.4.3\996b2fc6f72de8a35f651174e158211215259feb\mkl-dnn-0.16-1.4.3-windows-x86_64.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\hdf5-platform\1.10.3-1.4.3\3db8a8a5bbc74e4e7b19159bcca7f00bc9b9505f\hdf5-platform-1.10.3-1.4.3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\hdf5\1.10.3-1.4.3\fca7a092a15f8ff6f67649560cc1bbe488c7e06b\hdf5-1.10.3-1.4.3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\hdf5\1.10.3-1.4.3\8b542021930cc3b67442d1cb12d078b466e3921b\hdf5-1.10.3-1.4.3-linux-x86.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\hdf5\1.10.3-1.4.3\b8f2cc0566f581bf0f7618344ccbae5c03d1893\hdf5-1.10.3-1.4.3-linux-x86_64.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\hdf5\1.10.3-1.4.3\407573b96dd90a52bf6678a2ca86f2f82cec6f72\hdf5-1.10.3-1.4.3-linux-ppc64le.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\hdf5\1.10.3-1.4.3\10b1cdff107ff2bbe39d143456d1c0ba9b1c8933\hdf5-1.10.3-1.4.3-macosx-x86_64.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\hdf5\1.10.3-1.4.3\411e8b590417b41cda374a839056206f42b10b00\hdf5-1.10.3-1.4.3-windows-x86.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\hdf5\1.10.3-1.4.3\9c2c30c0607885a196f2e5c5766042201a152cfb\hdf5-1.10.3-1.4.3-windows-x86_64.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\opencv-platform\3.4.3-1.4.3\969ed743d2de5e9b598e16eb9f71289c99f4cfa7\opencv-platform-3.4.3-1.4.3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\flandmark\1.07-1.4.3\d4ce2ba8a2206b906ba682f976a4faa448e337e1\flandmark-1.07-1.4.3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\opencv\3.4.3-1.4.3\350f8b6d40b3fba1c4d1551750bb9b4f281e550e\opencv-3.4.3-1.4.3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\opencv\3.4.3-1.4.3\424d091d02a920fb551493200250d417744a02e2\opencv-3.4.3-1.4.3-android-arm.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\opencv\3.4.3-1.4.3\246a4edf7e939849062e66f33bcd289d3aab3f4a\opencv-3.4.3-1.4.3-android-arm64.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\opencv\3.4.3-1.4.3\70f6474f75205631acc1515546b288b875f6c3b1\opencv-3.4.3-1.4.3-android-x86.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\opencv\3.4.3-1.4.3\7998323c18994af2d0ce28ca0215a995aac00cf6\opencv-3.4.3-1.4.3-android-x86_64.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\opencv\3.4.3-1.4.3\37a258a37ab0588e7c1b20b34d2b57fd86289414\opencv-3.4.3-1.4.3-ios-arm64.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\opencv\3.4.3-1.4.3\8c0ac45239dbc4fdc499c4fbfe7339df354e69cd\opencv-3.4.3-1.4.3-ios-x86_64.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\opencv\3.4.3-1.4.3\5abdf4f7ede2acd5a2c24d2c0ec204bbff9453e9\opencv-3.4.3-1.4.3-linux-x86.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\opencv\3.4.3-1.4.3\ba3c5b10f9ae449d89cc9eaeaac691c41dedf1ba\opencv-3.4.3-1.4.3-linux-x86_64.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\opencv\3.4.3-1.4.3\2256b856aa9c99bfb882e942029b195a18b91e2\opencv-3.4.3-1.4.3-linux-armhf.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\opencv\3.4.3-1.4.3\748e74eb17966f9e40fee96c35c75442c0193e3d\opencv-3.4.3-1.4.3-linux-ppc64le.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\opencv\3.4.3-1.4.3\70ba262daf2e0a1e8ad8bff46bc33c6b505d3402\opencv-3.4.3-1.4.3-macosx-x86_64.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\opencv\3.4.3-1.4.3\3081e1d1bc4fb6b810ecaf4c8023adac71543ca3\opencv-3.4.3-1.4.3-windows-x86.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\opencv\3.4.3-1.4.3\e20b7ee17cb71212b5beccbc7c62143f19fc82a4\opencv-3.4.3-1.4.3-windows-x86_64.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\ffmpeg\4.0.2-1.4.3\eec0da9363b66d82ba82ed330d903dd27ca015a0\ffmpeg-4.0.2-1.4.3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\flycapture\2.11.3.121-1.4.3\d09a659ee2e63e5ed19aec68db697924b7120cc2\flycapture-2.11.3.121-1.4.3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\libdc1394\2.2.5-1.4.3\1491324bdc30feece465f350fed6cfdbc5594794\libdc1394-2.2.5-1.4.3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\libfreenect\0.5.3-1.4.3\5e93e096eee10d5dfc9950c08462ec7c7174e2db\libfreenect-0.5.3-1.4.3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\libfreenect2\0.2.0-1.4.3\8eab99e04aea0f136536bca145c9356a05536693\libfreenect2-0.2.0-1.4.3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\librealsense\1.12.1-1.4.3\4ff8d04c6b04bb8f5d0e07ab59b7bf5831685c67\librealsense-1.12.1-1.4.3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\videoinput\0.200-1.4.3\b7a736c04b56fa485d728269e83daf62531e77d3\videoinput-0.200-1.4.3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\artoolkitplus\2.3.1-1.4.3\5d7fefcc482d3b119de73b4742029b420e8d7438\artoolkitplus-2.3.1-1.4.3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\leptonica-platform\1.76.0-1.4.3\722a4edc11ac05b711559e2661b9043dc20415d1\leptonica-platform-1.76.0-1.4.3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\tesseract\4.0.0-rc2-1.4.3\577d6a3b4c73c0371c92c2767544549b17fa6be9\tesseract-4.0.0-rc2-1.4.3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\leptonica\1.76.0-1.4.3\5e780f1b89a7158f92baf61e84ef13013a1e13e6\leptonica-1.76.0-1.4.3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\leptonica\1.76.0-1.4.3\fa0058b196b11595a051386fd23560062c4da74\leptonica-1.76.0-1.4.3-android-arm.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\leptonica\1.76.0-1.4.3\39a3297e4106447cad2dbeb097253792cee810d0\leptonica-1.76.0-1.4.3-android-arm64.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\leptonica\1.76.0-1.4.3\b1f6a0026cce59c6343533fa984cef36828be87a\leptonica-1.76.0-1.4.3-android-x86.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\leptonica\1.76.0-1.4.3\95d65e785202b8d7f03266c0554bc6e32988f0d2\leptonica-1.76.0-1.4.3-android-x86_64.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\leptonica\1.76.0-1.4.3\e5ae6f405d6c9da028848d17af80e8151b9f0b49\leptonica-1.76.0-1.4.3-linux-x86.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\leptonica\1.76.0-1.4.3\99580ba2088410b6f9bf7a4b04a472aacf95f797\leptonica-1.76.0-1.4.3-linux-x86_64.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\leptonica\1.76.0-1.4.3\cdacff4f8f4940e135924ede5988e25a24a7507e\leptonica-1.76.0-1.4.3-linux-armhf.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\leptonica\1.76.0-1.4.3\f73dab29f210288291df945f67b733a0c3573b26\leptonica-1.76.0-1.4.3-linux-ppc64le.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\leptonica\1.76.0-1.4.3\d18fddf92b89c989ed33bc2e7ec2377f864f0c1\leptonica-1.76.0-1.4.3-macosx-x86_64.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\leptonica\1.76.0-1.4.3\1d75cc930fa207de756ea4e3ff16af620ec3a3f5\leptonica-1.76.0-1.4.3-windows-x86.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\leptonica\1.76.0-1.4.3\57c327ef32ec6ef67ee517a2facccf5a63c11cd9\leptonica-1.76.0-1.4.3-windows-x86_64.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.bytedeco\javacpp\1.4.3\476e9e3988d255c18ac28a28562c3f54cfb91a8b\javacpp-1.4.3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.lucee\oswego-concurrent\1.3.4\ad572b8223d1cb1ebccdf35428a3077a4209647f\oswego-concurrent-1.3.4.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\com.clearspring.analytics\stream\2.7.0\9998f8cf87d329fef226405f8d519638cfe1431d\stream-2.7.0.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\it.unimi.dsi\fastutil\6.5.7\dec71174d0c8a20f355e5af8b59f25eb424c49d3\fastutil-6.5.7.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\uk.com.robust-it\cloning\1.9.3\543bce6b30867ebccc79956528d4c46f0e491735\cloning-1.9.3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.objenesis\objenesis\2.6\639033469776fd37c08358c6b92a4761feb2af4b\objenesis-2.6.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\com.google.flatbuffers\flatbuffers-java\1.9.0\460bc8f6411768659c1ffb529592e251a808b9f2\flatbuffers-java-1.9.0.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\com.github.os72\protobuf-java-shaded-351\0.9\7601234796af0ca95776ac15cab943f48127df01\protobuf-java-shaded-351-0.9.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\commons-net\commons-net\3.1\2298164a7c2484406f2aa5ac85b205d39019896f\commons-net-3.1.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\net.ericaro\neoitertools\1.0.0\25fa0a0aaf12bc386ecdb19a6ee747b361c73a20\neoitertools-1.0.0.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.codehaus.woodstox\stax2-api\3.1.4\ac19014b1e6a7c08aad07fe114af792676b685b7\stax2-api-3.1.4.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\joda-time\joda-time\2.10.1\9ac3dbf89dbf2ee385185dd0cd3064fe789efee0\joda-time-2.10.1.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.jetbrains\annotations\13.0\919f0dfe192fb4e063e7dacadee7f8bb9a2672a9\annotations-13.0.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\commons-codec\commons-codec\1.11\3acb4705652e16236558f0f4f2192cc33c3bd189\commons-codec-1.11.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.freemarker\freemarker\2.3.28\7200064467a935052f99d114c2c05c3d189bc6d6\freemarker-2.3.28.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\net.sf.opencsv\opencsv\2.3\c23708cdb9e80a144db433e23344a788a1fd6599\opencsv-2.3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\com.tdunning\t-digest\3.2\2ab94758b0276a8a26102adf8d528cf6d0567b9a\t-digest-3.2.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\com.github.jai-imageio\jai-imageio-core\1.3.0\268feccd3a0fe32058ede66db41a21d9c7a9e535\jai-imageio-core-1.3.0.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\com.twelvemonkeys.imageio\imageio-jpeg\3.1.1\464d6537504c7855c8aa3669b2726641ee3fd00c\imageio-jpeg-3.1.1.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\com.twelvemonkeys.imageio\imageio-tiff\3.1.1\df54331a36fba97907e9413297c51defbe24a224\imageio-tiff-3.1.1.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\com.twelvemonkeys.imageio\imageio-psd\3.1.1\8073714c928c9343a9e6dc68b4f48ab9c51a41f0\imageio-psd-3.1.1.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\com.twelvemonkeys.imageio\imageio-bmp\3.1.1\3b6f82168a6f76899e33a8a9f4058d0e127df30e\imageio-bmp-3.1.1.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.springframework\spring-jcl\5.1.2.RELEASE\f0d7165b6cfb90356da4f25b14a6437fdef1ec8a\spring-jcl-5.1.2.RELEASE.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\net.java.dev.jna\jna-platform\4.5.2\741853c07152f6c0fef5194efa6b2dabac22e9c0\jna-platform-4.5.2.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.threeten\threetenbp\1.3.3\3ea31c96676ff12ab56be0b1af6fff61d1a4f1f2\threetenbp-1.3.3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.8.5\f645ed69d595b24d4cf8b3fbb64cc505bede8829\gson-2.8.5.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\com.twelvemonkeys.imageio\imageio-metadata\3.1.1\52b6b85601492e94fa8a08211c08179b1c888d91\imageio-metadata-3.1.1.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\com.twelvemonkeys.imageio\imageio-core\3.1.1\dbdf29da53ac89753d9abfc0f38802f6483821e\imageio-core-3.1.1.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\com.twelvemonkeys.common\common-image\3.1.1\c86b3bc138b0caee17ce4193275636543cf28bfe\common-image-3.1.1.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\com.twelvemonkeys.common\common-io\3.1.1\b6aec796ca2d20b145b6fa88bbe068724a258450\common-io-3.1.1.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\com.twelvemonkeys.common\common-lang\3.1.1\a9b5f8094211a8fbe5e9f469ebb266c1886d3666\common-lang-3.1.1.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\ch.qos.logback\logback-core\1.2.3\864344400c3d4d92dfeb0a305dc87d953677c03c\logback-core-1.2.3.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4j\log4j-api\2.11.1\268f0fe4df3eefe052b57c87ec48517d64fb2a10\log4j-api-2.11.1.jar;C:\Users\eugen\.gradle\caches\modules-2\files-2.1\net.java.dev.jna\jna\4.5.2\35d000afbaa4ed425d91873b40f4df9b8236875b\jna-4.5.2.jar" com.aurea.loganalyzer.SimpleRnnLogAnalyzer
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/C:/Users/eugen/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-simple/1.7.25/8dacf9514f0c707cbbcdd6fd699e8940d42fb54e/slf4j-simple-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/C:/Users/eugen/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.2.3/7c4f3c474fb2c041d8028740440937705ebb473a/logback-classic-1.2.3.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO org.nd4j.linalg.factory.Nd4jBackend - Loaded [CpuBackend] backend
+[main] INFO org.nd4j.nativeblas.NativeOpsHolder - Number of threads used for NativeOps: 4
+[main] INFO org.nd4j.nativeblas.Nd4jBlas - Number of threads used for BLAS: 4
+[main] INFO org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner - Backend used: [CPU]; OS: [Windows 10]
+[main] INFO org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner - Cores: [8]; Memory: [5.3GB];
+[main] INFO org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner - Blas vendor: [MKL]
+[main] INFO org.deeplearning4j.nn.multilayer.MultiLayerNetwork - Starting MultiLayerNetwork with WorkspaceModes set to [training: ENABLED; inference: ENABLED], cacheMode set to [NONE]
+Epoch 0
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 0 is 2638796.5
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [439, 500, 2436, 2648, 2761, 2872, 3043, 3050, 3189, 3927, 4139, 4816, 4851, 4866, 4966, 5584, 6655, 6835, 8378, 8744, 9060, 9262, 9330, 10637, 10782, 10961, 10970, 11445, 11589, 11778, 12494, 12549, 12685, 13059, 13130, 13205, 13515, 14634, 15060, 15270, 15675, 15994]
+Epoch done in 311 seconds
+Epoch 1
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 1 is 2622384.5
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [111, 252, 558, 768, 1135, 1659, 1780, 2110, 2424, 2665, 2868, 4126, 4672, 4903, 4955, 4976, 5668, 5722, 5800, 6121, 6236, 6401, 6819, 6842, 7019, 7119, 7778, 7859, 8022, 8228, 8445, 8502, 8731, 8969, 9299, 9918, 10059, 10192, 10291, 10537, 10657, 10873, 10878, 11152, 11752, 11858, 12134, 12260, 12307, 12614, 12684, 12934, 13468, 13987, 14133, 14666, 14806, 15269, 15549, 15880, 16011, 16101, 16197]
+Epoch done in 295 seconds
+Epoch 2
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 2 is 2606360.25
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [500, 1690, 1960, 2003, 2014, 2046, 2047, 2437, 2608, 2777, 2910, 3204, 3259, 3826, 4311, 4491, 4552, 5013, 5153, 5465, 6185, 6828, 9052, 9456, 9507, 9983, 10279, 10471, 10947, 11073, 11286, 11352, 11817, 12382, 13277, 13419, 14356, 14714, 14929, 15175, 15445, 15540, 15879, 16124]
+Epoch done in 301 seconds
+Epoch 3
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 3 is 2582452.0
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [1080, 2268, 2447, 3230, 3653, 3883, 4215, 6379, 6962, 7093, 7787, 8206, 9922, 10269, 10492, 10898, 12031, 13141, 13350, 13435, 14128, 14291, 14720, 15876, 15908, 16167, 16209]
+Epoch done in 304 seconds
+Epoch 4
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 4 is 2544883.5
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [917, 927, 948, 1114, 1714, 2088, 2244, 2313, 3885, 4493, 5166, 5201, 6512, 6798, 7196, 7662, 7679, 8598, 8723, 8803, 8883, 9012, 9014, 9026, 9205, 9523, 10655, 11310, 11400, 13233, 13499, 14319, 14452, 14920, 15261, 15463, 15937, 16199]
+Epoch done in 301 seconds
+Epoch 5
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 5 is 2485257.0
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [547, 647, 1008, 1467, 1853, 2157, 2233, 2264, 2504, 2842, 3085, 3484, 3866, 3996, 4699, 4845, 5879, 6375, 6528, 6846, 7411, 7550, 8327, 8787, 8972, 9048, 9219, 9369, 9373, 9624, 9842, 9852, 10194, 10792, 12091, 13871, 14639, 14775, 15077, 15482, 16046]
+Epoch done in 311 seconds
+Epoch 6
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 6 is 2416841.0
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [224, 334, 1083, 1224, 1844, 2514, 2636, 2652, 3548, 4078, 5702, 5918, 6129, 6835, 7900, 7999, 9005, 9802, 10367, 10419, 10610, 10759, 10792, 11416, 11426, 11496, 11564, 11848, 12604, 12749, 13013, 13229, 13274, 13593, 14071, 14074, 14103, 14417, 15998]
+Epoch done in 296 seconds
+Epoch 7
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 7 is 2355574.25
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [631, 1011, 1147, 2199, 2355, 2523, 3516, 3811, 3840, 3901, 4895, 6383, 6654, 8016, 8405, 8574, 9044, 9083, 9126, 9847, 10107, 11012, 11129, 11391, 11411, 11668, 12052, 13007, 13493, 13840, 14835, 15289, 15335, 15833, 16068]
+Epoch done in 298 seconds
+Epoch 8
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 8 is 2298327.0
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [68, 448, 763, 970, 1478, 1772, 2086, 2617, 2873, 2960, 3031, 3288, 3780, 3931, 4756, 4841, 5097, 5101, 5176, 5315, 6616, 6916, 6995, 7933, 8349, 8762, 9033, 9452, 10134, 10439, 10622, 10696, 12112, 12668, 13430, 14321, 14548, 15769, 16191]
+Epoch done in 299 seconds
+Epoch 9
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 9 is 2241185.0
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [481, 1086, 1656, 2161, 2412, 2503, 2565, 2960, 3214, 3612, 3759, 4598, 4693, 4779, 5323, 5802, 6127, 6145, 7039, 7391, 7417, 7450, 9438, 9522, 12276, 12497, 12859, 13464, 13731, 14439, 14767, 14804, 15334, 15387, 15542]
+Epoch done in 295 seconds
+Epoch 10
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 10 is 2178887.5
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [2469, 3403, 3431, 3943, 4340, 5066, 5070, 5259, 6710, 6922, 6965, 7116, 7235, 7907, 8748, 9177, 9464, 9589, 9993, 10188, 10938, 12975, 13634, 13639, 15876, 16148, 16186]
+Epoch done in 298 seconds
+Epoch 11
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 11 is 2111787.0
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [277, 374, 1506, 1695, 1849, 2116, 3185, 3200, 3710, 4077, 5302, 6079, 6289, 6586, 7035, 7997, 8302, 8859, 9485, 11077, 11338, 12054, 12336, 13104, 13761, 15002, 15195, 15497, 15805]
+Epoch done in 302 seconds
+Epoch 12
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 12 is 2051646.0
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [905, 1038, 1522, 2446, 2639, 3262, 4694, 4959, 5504, 5633, 6898, 7074, 8261, 9015, 9023, 9463, 9708, 10417, 10749, 11042, 11435, 11539, 12373, 12542, 12848, 13416, 14544, 14596, 15253, 15777]
+Epoch done in 297 seconds
+Epoch 13
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 13 is 1999176.0
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [108, 135, 404, 792, 2317, 2377, 2702, 2840, 3810, 3971, 5105, 5996, 6166, 6383, 6455, 7393, 7857, 8535, 8929, 9320, 9615, 9792, 10785, 10986, 11214, 11287, 11364, 12009, 12749, 12972, 13683, 13868, 14115, 14143, 14562, 14809, 15597, 15909]
+Epoch done in 298 seconds
+Epoch 14
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 14 is 1958842.875
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [366, 1155, 1269, 1706, 1985, 3207, 3371, 3421, 3510, 3788, 4424, 5613, 7146, 7214, 7364, 7393, 9157, 10518, 11717, 11745, 11929, 12112, 12195, 14394, 15127, 15275]
+Epoch done in 298 seconds
+Epoch 15
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 15 is 1951482.25
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [197, 1912, 2789, 3509, 3552, 3694, 3810, 4606, 4615, 5056, 5769, 6994, 7010, 7183, 7615, 7620, 8546, 9573, 10194, 11048, 11689, 11733, 11960, 12386, 13610, 14419, 15259, 15405, 15603, 16081]
+Epoch done in 297 seconds
+Epoch 16
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 16 is 1887566.375
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [98, 1702, 1840, 2272, 2872, 3541, 4268, 5618, 5815, 7164, 7695, 8014, 8330, 9729, 10701, 11418, 11707, 11967, 14100, 14425, 15773]
+Epoch done in 299 seconds
+Epoch 17
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 17 is 1854011.875
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [638, 671, 835, 855, 1334, 2118, 2507, 2579, 2612, 2829, 3357, 3698, 4149, 4669, 6563, 6586, 7313, 8718, 9192, 9408, 10453, 11109, 12161, 12839, 12880, 13096, 13684, 13947, 15156, 15530, 16240]
+Epoch done in 306 seconds
+Epoch 18
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 18 is 1822672.75
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [967, 1044, 1257, 1418, 1689, 2361, 2515, 3138, 3231, 3614, 3944, 4133, 5213, 5340, 5460, 5500, 5709, 5821, 6450, 7193, 9573, 10332, 10999, 13279, 15094, 15103, 15767, 16065]
+Epoch done in 310 seconds
+Epoch 19
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 19 is 1795037.875
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [1378, 1737, 1973, 2449, 2830, 3457, 3666, 3737, 4015, 4110, 4664, 5104, 6582, 7041, 8637, 8827, 9315, 9945, 11991, 14413, 15965]
+Epoch done in 372 seconds
+Epoch 20
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 20 is 1768210.875
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [459, 491, 1001, 1175, 1245, 1388, 1586, 1963, 2204, 2564, 4433, 4669, 5123, 5250, 5302, 7585, 8208, 9636, 10666, 13183, 13417, 14324, 14564, 15461, 16234]
+Epoch done in 358 seconds
+Epoch 21
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 21 is 1743604.375
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [129, 720, 996, 1837, 2806, 3075, 3321, 4095, 4371, 4602, 5745, 5925, 6403, 6523, 8310, 8583, 9061, 9231, 9566, 9680, 10182, 10998, 11228, 11578, 11733, 12312, 14021, 15681, 16208]
+Epoch done in 348 seconds
+Epoch 22
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 22 is 1720704.625
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [324, 726, 1109, 1891, 2253, 3028, 3082, 3378, 3455, 3655, 3950, 4403, 5068, 7525, 10224, 10400, 10952, 11143, 11151, 13780, 13957, 14188]
+Epoch done in 352 seconds
+Epoch 23
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 23 is 1698743.5
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [3, 207, 572, 712, 791, 1120, 1311, 1586, 2815, 2957, 3048, 3322, 3985, 4215, 4225, 5975, 6152, 6919, 7069, 7982, 9197, 9273, 9421, 10305, 10364, 10469, 11209, 11701, 12656, 13129, 14865, 15198, 15540, 15684]
+Epoch done in 376 seconds
+Epoch 24
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 24 is 1678378.125
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [1788, 2291, 3843, 4596, 4825, 5660, 5824, 6755, 7516, 7608, 8225, 8357, 8903, 9144, 11379, 11440, 11883, 12183, 12456, 13040, 13252, 13359, 14560, 14666, 15909, 16028]
+Epoch done in 370 seconds
+Epoch 25
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 25 is 1658409.0
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [356, 464, 722, 1192, 1683, 5844, 5893, 6148, 6217, 6603, 6950, 7200, 7448, 7693, 8096, 8966, 9269, 9486, 10482, 13605, 13831, 14195]
+Epoch done in 374 seconds
+Epoch 26
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 26 is 1641117.5
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [313, 385, 1060, 2126, 2652, 2921, 3204, 3457, 4898, 5298, 5932, 6319, 10769, 11448, 11933, 12192, 13272, 14715, 15902]
+Epoch done in 369 seconds
+Epoch 27
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 27 is 1623365.0
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [1452, 1660, 4231, 5010, 5273, 5370, 5750, 6871, 8727, 8829, 9842, 10048, 10271, 11784, 11957, 12201, 12456, 13398, 13400, 13727, 13988, 14376, 14855, 15952]
+Epoch done in 380 seconds
+Epoch 28
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 28 is 1608146.5
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [1597, 1756, 2866, 3148, 3237, 5328, 5695, 6023, 6026, 6103, 6336, 6464, 6531, 6683, 7694, 9641, 11004, 12658, 12896, 14830, 15021]
+Epoch done in 383 seconds
+Epoch 29
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 29 is 1591931.25
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [1512, 1595, 5384, 5480, 7000, 7310, 8281, 8947, 9422, 12023, 12322, 13144, 13618, 13905, 13928, 14549, 14875, 15206, 15489]
+Epoch done in 388 seconds
+Epoch 30
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 30 is 1577999.5
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [1858, 3889, 4035, 4285, 4317, 4745, 5112, 5430, 5589, 7732, 8021, 8771, 10311, 12013, 12218, 12620, 13195, 13205, 14292]
+Epoch done in 367 seconds
+Epoch 31
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 31 is 1564515.375
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [250, 300, 812, 866, 2032, 3476, 4589, 6112, 6901, 7470, 7500, 8189, 8365, 8897, 10188, 10274, 10688, 11388, 12945, 14443]
+Epoch done in 364 seconds
+Epoch 32
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 32 is 1551166.375
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [230, 496, 636, 6667, 6962, 7917, 8205, 8212, 8261, 9682, 9845, 10843, 12059, 12344, 12794, 13441, 15802, 15983]
+Epoch done in 363 seconds
+Epoch 33
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 33 is 1538450.75
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [1047, 1202, 1603, 6887, 8379, 8524, 8718, 8910, 9715, 11081, 12234, 12606, 12968, 13110, 14443, 15206, 15591, 15999]
+Epoch done in 364 seconds
+Epoch 34
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 34 is 1527517.125
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [1824, 2602, 2798, 3192, 3778, 4396, 4951, 6453, 7108, 7992, 8336, 8478, 9882, 10935, 15010, 15056, 15683, 15921]
+Epoch done in 359 seconds
+Epoch 35
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 35 is 1565361.625
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [2458, 2489, 2772, 3626, 3899, 4331, 4456, 5792, 6254, 7306, 8306, 9255, 9414, 9447, 12502]
+Epoch done in 348 seconds
+Epoch 36
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 36 is 1506478.5
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [1829, 5811, 5945, 5979, 9329, 9532, 9888, 10036, 10172, 11478, 11619, 13705, 13884, 14894, 15124]
+Epoch done in 349 seconds
+Epoch 37
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 37 is 1495787.625
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [39, 1243, 2266, 2699, 3907, 6175, 8519, 11676, 12180, 12955, 14243, 14868, 15757]
+Epoch done in 361 seconds
+Epoch 38
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 38 is 1485736.625
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [1577, 1893, 2370, 3522, 4155, 4883, 5045, 6006, 6592, 7156, 10059, 11103, 11262, 13022, 15421]
+Epoch done in 364 seconds
+Epoch 39
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 39 is 1477699.125
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [549, 1321, 1431, 5017, 6109, 7986, 9255, 9774, 13780, 14199, 15237]
+Epoch done in 382 seconds
+Epoch 40
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 40 is 1469324.125
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [357, 1027, 1114, 2358, 3305, 3751, 4078, 5138, 5870, 6329, 6366, 8315, 8609, 9099, 11947, 12810, 13362, 14816, 15045, 15170, 15390, 15731]
+Epoch done in 352 seconds
+Epoch 41
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 41 is 1460712.625
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [597, 1321, 2016, 3382, 4241, 4857, 7174, 8134, 9117, 9471, 10101, 12259, 12745, 13329, 13727, 13915, 14560, 15757]
+Epoch done in 349 seconds
+Epoch 42
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 42 is 1452229.75
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [171, 652, 1589, 1915, 1936, 3834, 5244, 6574, 7119, 7938, 8673, 9606, 10242, 10674, 10714, 11956, 12181, 13885, 14804]
+Epoch done in 346 seconds
+Epoch 43
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 43 is 1445249.75
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [804, 1886, 2269, 5119, 5513, 7590, 7927, 8478, 9385, 9909, 12599, 12728, 13416, 13983, 13998]
+Epoch done in 361 seconds
+Epoch 44
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 44 is 1437645.5
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [23, 674, 3999, 4656, 5379, 7722, 9330, 9693, 9827, 10776, 10895, 12560, 13199, 13411, 13965, 14521, 14614]
+Epoch done in 348 seconds
+Epoch 45
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 45 is 1431919.125
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [384, 587, 1746, 3640, 4282, 5060, 7885, 8327, 8378, 11110, 11818, 12292, 12309, 13382, 14196, 15256, 15678]
+Epoch done in 344 seconds
+Epoch 46
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 46 is 1424758.125
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [126, 682, 1561, 4192, 6483, 7205, 7599, 9108, 9347, 9678, 9760, 10137, 12728, 12738, 12896, 13535, 15760]
+Epoch done in 342 seconds
+Epoch 47
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 47 is 1417951.0
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [606, 695, 4912, 5305, 5451, 6201, 7208, 7504, 7562, 8164, 9434, 9781, 9866, 10556, 13367, 13460, 15926]
+Epoch done in 344 seconds
+Epoch 48
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 48 is 1412337.625
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [1428, 5527, 5871, 7470, 8510, 9207, 11183, 12522, 12530]
+Epoch done in 348 seconds
+Epoch 49
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 49 is 1406541.625
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [689, 913, 1856, 4023, 4559, 6112, 6331, 6514, 6927, 7021, 7124, 8615, 9665, 10968, 11318, 11330, 13618, 14189, 15411]
+Epoch done in 356 seconds
+Epoch 50
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 50 is 1400958.75
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [625, 2442, 3832, 4291, 4391, 4747, 4925, 7949, 8297, 9373, 10085, 10115, 10714, 10781, 11069, 13305, 15347, 15723]
+Epoch done in 343 seconds
+Epoch 51
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 51 is 1396431.875
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [380, 1240, 1269, 2572, 3762, 4405, 4688, 6124, 6358, 8076, 8815, 10055, 10323, 10805, 11846, 12859]
+Epoch done in 344 seconds
+Epoch 52
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 52 is 1390102.5
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [395, 2054, 2619, 2752, 4314, 6085, 7086, 8498, 8583, 10398, 10782, 13876, 14470, 15190, 16054]
+Epoch done in 348 seconds
+Epoch 53
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 53 is 1385870.375
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [481, 1801, 2003, 2467, 4604, 6108, 6150, 9328, 9706, 9842, 10207, 13787, 14691, 15922]
+Epoch done in 360 seconds
+Epoch 54
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 54 is 1381172.375
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [246, 1542, 2989, 5342, 7812, 7893, 10424, 11936, 15265, 15440]
+Epoch done in 345 seconds
+Epoch 55
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 55 is 1376454.0
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [1106, 1721, 1749, 3813, 5766, 6501, 6533, 9750, 10490, 10589, 11207, 12601, 13614, 14287, 14873, 15987]
+Epoch done in 343 seconds
+Epoch 56
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 56 is 1372873.5
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [4770, 5554, 5661, 10489, 10958, 12003, 14199, 15869, 16025]
+Epoch done in 341 seconds
+Epoch 57
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 57 is 1367691.5
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [569, 2674, 3611, 3735, 5166, 5451, 5871, 6319, 6711, 7340, 7681, 7983, 8131, 10570, 11848, 12106, 13744, 14629, 15496, 15767]
+Epoch done in 344 seconds
+Epoch 58
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 58 is 1364426.125
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [60, 646, 2527, 3546, 3674, 3834, 3924, 4104, 4706, 7225, 7941, 8270, 10907, 12591, 12624, 12700, 14708, 16125]
+Epoch done in 355 seconds
+Epoch 59
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 59 is 1360119.75
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [488, 1664, 1922, 2001, 4523, 5104, 9037, 10499, 11168, 12840, 14315, 15944]
+Epoch done in 355 seconds
+Epoch 60
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 60 is 1356083.875
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [2538, 2583, 3274, 4422, 4579, 4850, 5679, 6492, 7550, 12842, 13101, 14842, 15651]
+Epoch done in 363 seconds
+Epoch 61
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 61 is 1352652.125
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [170, 798, 1384, 2427, 4250, 7942, 10279, 10703, 12521, 14396, 14397, 15817, 16083]
+Epoch done in 362 seconds
+Epoch 62
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 62 is 1349423.25
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [3631, 4060, 8758, 8881, 9886, 10481, 12080, 13008, 14391, 15560, 16195]
+Epoch done in 370 seconds
+Epoch 63
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 63 is 1346286.5
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [410, 1418, 2669, 3231, 5146, 5306, 6072, 11193, 13472, 15811]
+Epoch done in 358 seconds
+Epoch 64
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 64 is 1342768.375
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [113, 726, 3728, 4103, 4431, 6336, 6902, 7550, 7725, 12053, 12494, 15017, 15658, 15804]
+Epoch done in 369 seconds
+Epoch 65
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 65 is 1340084.5
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [1254, 2408, 3731, 6113, 7866, 8390, 8817, 9594, 9936, 13000, 13158, 14082]
+Epoch done in 373 seconds
+Epoch 66
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 66 is 1336616.875
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [909, 5056, 6676, 6971, 7121, 7216, 11580, 13103, 13859, 13919, 14224, 14260, 14974]
+Epoch done in 371 seconds
+Epoch 67
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 67 is 1334545.25
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [3371, 3438, 3579, 3946, 4982, 6012, 6514, 8014, 8804, 9292, 9565, 9608, 12173, 14303]
+Epoch done in 366 seconds
+Epoch 68
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 68 is 1331613.25
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [7047, 11157, 14563, 15375, 16223]
+Epoch done in 365 seconds
+Epoch 69
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 69 is 1328972.5
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [1031, 2132, 4105, 4211, 7195, 7372, 10100, 11979, 15484]
+Epoch done in 395 seconds
+Epoch 70
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 70 is 1325845.875
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [1890, 2369, 3398, 4477, 7679, 8166, 12186, 12335, 14675]
+Epoch done in 406 seconds
+Epoch 71
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 71 is 1322964.875
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [837, 4525, 5139, 5847, 6481, 6709, 8172, 8753, 15862]
+Epoch done in 384 seconds
+Epoch 72
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 72 is 1320859.0
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [6595, 7157, 7523, 9490, 15386]
+Epoch done in 378 seconds
+Epoch 73
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 73 is 1319081.75
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [74, 1593, 5033, 7565, 8667, 10370, 11322, 12007, 13978, 15056, 15066]
+Epoch done in 382 seconds
+Epoch 74
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 74 is 1316793.0
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [408, 1776, 2594, 3849, 4103, 5502, 7254, 10189, 11522, 16044]
+Epoch done in 368 seconds
+Epoch 75
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 75 is 1314345.875
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [973, 1683, 5795, 7158, 7999, 9983, 14214, 15221, 16247]
+Epoch done in 369 seconds
+Epoch 76
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 76 is 1312596.25
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [93, 1006, 3246, 5028, 5040, 10992, 11678, 14203, 15045, 15867]
+Epoch done in 370 seconds
+Epoch 77
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 77 is 1309957.5
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [771, 1928, 4014, 4967, 5454, 5823, 7411, 9036, 9268, 12586, 12862]
+Epoch done in 375 seconds
+Epoch 78
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 78 is 1307876.0
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [811, 3149, 8254, 12031, 13069, 15080, 15850]
+Epoch done in 390 seconds
+Epoch 79
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 79 is 1305494.5
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [659, 3018, 4438, 4508, 6052, 6920, 6950, 8487, 11904, 12249, 16172]
+Epoch done in 383 seconds
+Epoch 80
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 80 is 1304121.375
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [4282, 5266, 7128, 7489, 8273, 8455, 9299, 9985]
+Epoch done in 366 seconds
+Epoch 81
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 81 is 1302614.75
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [4572, 8377, 8698, 9350, 10226]
+Epoch done in 377 seconds
+Epoch 82
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 82 is 1300909.125
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [2299, 4037, 4328, 5797, 6865, 8034, 11911, 11913, 13335, 14165, 15524, 15571]
+Epoch done in 370 seconds
+Epoch 83
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 83 is 1299335.0
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [132, 2119, 2752, 6461, 7584, 9637, 10571, 13168, 13411, 13990, 15201]
+Epoch done in 369 seconds
+Epoch 84
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 84 is 1297041.875
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [3485, 4311, 4478, 6551, 7116, 7208, 7310, 9238, 14161, 14685]
+Epoch done in 367 seconds
+Epoch 85
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 85 is 1295750.25
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [220, 793, 1728, 2172, 4055, 5770, 8843, 10341, 10629, 11749, 13544]
+Epoch done in 368 seconds
+Epoch 86
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 86 is 1293841.875
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [614, 1508, 2384, 2813, 3273, 7398, 8428, 9407, 10107, 13244, 13295, 13371, 14047, 14161, 14983]
+Epoch done in 369 seconds
+Epoch 87
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 87 is 1292082.625
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [349, 827, 3709, 6991, 9205, 12415, 14150, 15670]
+Epoch done in 370 seconds
+Epoch 88
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 88 is 1290665.0
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [70, 255, 781, 1538, 2220, 4763, 8711, 9374, 10090, 11223, 13286, 14030, 16056]
+Epoch done in 384 seconds
+Epoch 89
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 89 is 1289491.375
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [3256, 6650, 16133]
+Epoch done in 392 seconds
+Epoch 90
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 90 is 1287605.5
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [1242, 6103, 9182, 10019, 10310, 14011]
+Epoch done in 367 seconds
+Epoch 91
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 91 is 1286484.75
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [3734, 6525, 6532, 8348, 8792, 10234, 10631, 13735, 14088, 14186]
+Epoch done in 367 seconds
+Epoch 92
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 92 is 1285141.5
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [1128, 2192, 2654, 5076, 6100, 6549, 10075, 10163]
+Epoch done in 380 seconds
+Epoch 93
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 93 is 1283867.25
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [6141, 7476, 9035, 14402, 14932, 14998, 15766]
+Epoch done in 377 seconds
+Epoch 94
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 94 is 1282821.25
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [3042, 8098, 13324, 13818]
+Epoch done in 374 seconds
+Epoch 95
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 95 is 1281276.25
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [1011, 2970, 10946, 11529, 11761]
+Epoch done in 384 seconds
+Epoch 96
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 96 is 1280660.5
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [4236, 11236, 14183]
+Epoch done in 373 seconds
+Epoch 97
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 97 is 1279691.0
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [2332, 2641, 2804, 4936, 6285, 6359, 9513, 13550, 14486, 15549]
+Epoch done in 385 seconds
+Epoch 98
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 98 is 1277972.0
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [858, 864, 2689, 3980, 8039, 12863, 14862, 15742]
+Epoch done in 385 seconds
+Epoch 99
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 99 is 1276565.25
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [272, 6433]
+Epoch done in 374 seconds
+
+Process finished with exit code 0
