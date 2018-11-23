@@ -358,3 +358,158 @@ predicted error line numbers: [7047, 11157, 14563, 15375, 16223]
 Epoch done in 365 seconds
 Epoch 69
 [main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 69 is 1328972.5
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [1031, 2132, 4105, 4211, 7195, 7372, 10100, 11979, 15484]
+Epoch done in 395 seconds
+Epoch 70
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 70 is 1325845.875
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [1890, 2369, 3398, 4477, 7679, 8166, 12186, 12335, 14675]
+Epoch done in 406 seconds
+Epoch 71
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 71 is 1322964.875
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [837, 4525, 5139, 5847, 6481, 6709, 8172, 8753, 15862]
+Epoch done in 384 seconds
+Epoch 72
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 72 is 1320859.0
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [6595, 7157, 7523, 9490, 15386]
+Epoch done in 378 seconds
+Epoch 73
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 73 is 1319081.75
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [74, 1593, 5033, 7565, 8667, 10370, 11322, 12007, 13978, 15056, 15066]
+Epoch done in 382 seconds
+Epoch 74
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 74 is 1316793.0
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [408, 1776, 2594, 3849, 4103, 5502, 7254, 10189, 11522, 16044]
+Epoch done in 368 seconds
+Epoch 75
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 75 is 1314345.875
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [973, 1683, 5795, 7158, 7999, 9983, 14214, 15221, 16247]
+Epoch done in 369 seconds
+Epoch 76
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 76 is 1312596.25
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [93, 1006, 3246, 5028, 5040, 10992, 11678, 14203, 15045, 15867]
+Epoch done in 370 seconds
+Epoch 77
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 77 is 1309957.5
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [771, 1928, 4014, 4967, 5454, 5823, 7411, 9036, 9268, 12586, 12862]
+Epoch done in 375 seconds
+Epoch 78
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 78 is 1307876.0
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [811, 3149, 8254, 12031, 13069, 15080, 15850]
+Epoch done in 390 seconds
+Epoch 79
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 79 is 1305494.5
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [659, 3018, 4438, 4508, 6052, 6920, 6950, 8487, 11904, 12249, 16172]
+Epoch done in 383 seconds
+Epoch 80
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 80 is 1304121.375
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [4282, 5266, 7128, 7489, 8273, 8455, 9299, 9985]
+Epoch done in 366 seconds
+Epoch 81
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 81 is 1302614.75
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [4572, 8377, 8698, 9350, 10226]
+Epoch done in 377 seconds
+Epoch 82
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 82 is 1300909.125
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [2299, 4037, 4328, 5797, 6865, 8034, 11911, 11913, 13335, 14165, 15524, 15571]
+Epoch done in 370 seconds
+Epoch 83
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 83 is 1299335.0
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [132, 2119, 2752, 6461, 7584, 9637, 10571, 13168, 13411, 13990, 15201]
+Epoch done in 369 seconds
+Epoch 84
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 84 is 1297041.875
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [3485, 4311, 4478, 6551, 7116, 7208, 7310, 9238, 14161, 14685]
+Epoch done in 367 seconds
+Epoch 85
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 85 is 1295750.25
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [220, 793, 1728, 2172, 4055, 5770, 8843, 10341, 10629, 11749, 13544]
+Epoch done in 368 seconds
+Epoch 86
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 86 is 1293841.875
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [614, 1508, 2384, 2813, 3273, 7398, 8428, 9407, 10107, 13244, 13295, 13371, 14047, 14161, 14983]
+Epoch done in 369 seconds
+Epoch 87
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 87 is 1292082.625
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [349, 827, 3709, 6991, 9205, 12415, 14150, 15670]
+Epoch done in 370 seconds
+Epoch 88
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 88 is 1290665.0
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [70, 255, 781, 1538, 2220, 4763, 8711, 9374, 10090, 11223, 13286, 14030, 16056]
+Epoch done in 384 seconds
+Epoch 89
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 89 is 1289491.375
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [3256, 6650, 16133]
+Epoch done in 392 seconds
+Epoch 90
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 90 is 1287605.5
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [1242, 6103, 9182, 10019, 10310, 14011]
+Epoch done in 367 seconds
+Epoch 91
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 91 is 1286484.75
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [3734, 6525, 6532, 8348, 8792, 10234, 10631, 13735, 14088, 14186]
+Epoch done in 367 seconds
+Epoch 92
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 92 is 1285141.5
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [1128, 2192, 2654, 5076, 6100, 6549, 10075, 10163]
+Epoch done in 380 seconds
+Epoch 93
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 93 is 1283867.25
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [6141, 7476, 9035, 14402, 14932, 14998, 15766]
+Epoch done in 377 seconds
+Epoch 94
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 94 is 1282821.25
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [3042, 8098, 13324, 13818]
+Epoch done in 374 seconds
+Epoch 95
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 95 is 1281276.25
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [1011, 2970, 10946, 11529, 11761]
+Epoch done in 384 seconds
+Epoch 96
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 96 is 1280660.5
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [4236, 11236, 14183]
+Epoch done in 373 seconds
+Epoch 97
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 97 is 1279691.0
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [2332, 2641, 2804, 4936, 6285, 6359, 9513, 13550, 14486, 15549]
+Epoch done in 385 seconds
+Epoch 98
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 98 is 1277972.0
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [858, 864, 2689, 3980, 8039, 12863, 14862, 15742]
+Epoch done in 385 seconds
+Epoch 99
+[main] INFO org.deeplearning4j.optimize.listeners.ScoreIterationListener - Score at iteration 99 is 1276565.25
+real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
+predicted error line numbers: [272, 6433]
+Epoch done in 374 seconds
+
+Process finished with exit code 0
