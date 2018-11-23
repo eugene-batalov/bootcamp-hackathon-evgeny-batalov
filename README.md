@@ -40,3 +40,5 @@ real error line numbers: [1008, 1016, 1017, 3677, 7614, 7616]
 predicted error line numbers: [313, 385, 1060, 2126, 2652, 2921, 3204, 3457, 4898, 5298, 5932, 6319, 10769, 11448, 11933, 12192, 13272, 14715, 15902]
 Epoch done in 369 seconds
 ```
+
+In all, current implementation is not production ready but the idea definitely is interesting and worth further dig in.
